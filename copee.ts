@@ -1,4 +1,4 @@
-﻿module Copyee {
+﻿module Copee {
     
     /*
      * Copy text to the user's clipboard

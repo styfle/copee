@@ -15,12 +15,12 @@ function showAlert(success: boolean) {
 }
 
 q('#copee-btn1').addEventListener('click', function (e) {
-    var success = Copyee.toClipboard('Wow, "copee" works!');
+    var success = Copee.toClipboard('Wow, "copee" works!');
     showAlert(success);
 });
 
 q('#copee-btn2').addEventListener('click', function (e) {
     var el = q('#copee-input2');
-    var success = Copyee.fromElement(el);
+    var success = Copee.fromElement(el);
     showAlert(success);
 });

@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-6">
 <pre><code>q('#copee-btn1').addEventListener('click', function (e) {
-    var success = Copyee.toClipboard('Wow, "copee" works!');
+    var success = Copee.toClipboard('Wow, "copee" works!');
     showAlert(success);
 });</code></pre>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="col-md-6">
 <pre><code>q('#copee-btn2').addEventListener('click', function (e) {
     var el = q('#copee-input2');
-    var success = Copyee.fromElement(el);
+    var success = Copee.fromElement(el);
     showAlert(success);
 });
 </code></pre>
@@ -37,7 +37,7 @@
                     <p>Example 2: Copy from <code>input</code> element</p>
 
                     <div class="input-group">
-                        <input id="copee-input2" type="text" class="form-control" placeholder="Copy Text" value="https://github.com/style/copee">
+                        <input id="copee-input2" type="text" class="form-control" placeholder="Copy Text" value="https://github.com/styfle/copee">
                         <span class="input-group-btn">
                             <button id="copee-btn2" class="btn btn-default" type="button">Copy!</button>
                         </span>
