@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Copee Example</title>
+    <!-- Bootstrap is not required...it just looks pretty -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+
+            <h1>Copee Example</h1>
+            <p>Copy text from browser to clipboard...natively!</p>
+            <div class="row">
+                <div class="col-md-6">
+<pre><code>q('#copee-btn1').addEventListener('click', function (e) {
+    var success = Copyee.toClipboard('Wow, "copee" works!');
+    showAlert(success);
+});</code></pre>
+                </div>
+                <div class="col-md-6">
+                    <p>Example 1: Copy hard-coded text</p>
+                    <p><button id="copee-btn1" class="btn btn-primary btn-lg" href="#" role="button">Copy To Clipboard</button></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+<pre><code>q('#copee-btn2').addEventListener('click', function (e) {
+    var el = q('#copee-input2');
+    var success = Copyee.fromElement(el);
+    showAlert(success);
+});
+</code></pre>
+                </div>
+                <div class="col-md-6">
+                    <p>Example 2: Copy from <code>input</code> element</p>
+
+                    <div class="input-group">
+                        <input id="copee-input2" type="text" class="form-control" placeholder="Copy Text" value="https://github.com/style/copee">
+                        <span class="input-group-btn">
+                            <button id="copee-btn2" class="btn btn-default" type="button">Copy!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success" role="alert" style="display:none;">Check your clipboard :)</div>
+        <div class="alert alert-danger" role="alert" style="display:none;">Something went wrong :(</div>
+    </div>
+    <script src="../copee.js"></script>
+    <script src="example.js"></script>
+</body>
+</html>
