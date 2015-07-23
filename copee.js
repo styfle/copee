@@ -1,5 +1,5 @@
-var Copyee;
-(function (Copyee) {
+var Copee;
+(function (Copee) {
     /*
      * Copy text to the user's clipboard
      */
@@ -24,7 +24,7 @@ var Copyee;
         document.body.removeChild(ta);
         return success;
     }
-    Copyee.toClipboard = toClipboard;
+    Copee.toClipboard = toClipboard;
     /*
      * Copy text from an input/textarea element to a user's clipboard
      */
@@ -46,5 +46,5 @@ var Copyee;
         }
         return success;
     }
-    Copyee.fromElement = fromElement;
-})(Copyee || (Copyee = {}));
+    Copee.fromElement = fromElement;
+})(Copee || (Copee = {}));
