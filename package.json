@@ -1,0 +1,19 @@
+{
+  "name": "copee",
+  "version": "0.0.1",
+  "description": "Copy text from browser to clipboard...natively!",
+  "main": "copee.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/styfle/copee.git"
+  },
+  "keywords": [
+    "copy"
+  ],
+  "author": "styfle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/styfle/copee/issues"
+  },
+  "homepage": "http://styfle.github.io/copee/"
+}

@@ -4,7 +4,7 @@
 
 # Demo
 
-[Demo](http://styfle.github.io/copee/) is live.
+Try the [demo](http://styfle.github.io/copee/) page to see it in action!
 
 # Usage
 
