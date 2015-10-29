@@ -2,8 +2,8 @@
 
 > Copy text from browser to clipboard...natively!
 
-![Version](https://img.shields.io/npm/v/copee.svg)
-![Downloads per month](https://img.shields.io/npm/dm/copee.svg)
+[![Version](https://img.shields.io/npm/v/copee.svg)](https://www.npmjs.com/package/copee)
+[![Downloads](https://img.shields.io/npm/dt/copee.svg)](https://www.npmjs.com/package/copee)
 
 # Install
 
