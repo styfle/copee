@@ -1,6 +1,6 @@
 {
   "name": "copee",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Copy text from browser to clipboard...natively!",
   "main": "src/copee.js",
   "scripts": {
