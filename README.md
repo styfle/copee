@@ -1,9 +1,12 @@
-﻿# Copee
+﻿# copee
 
-> Copy text from browser to clipboard...natively!
-
-[![Version](https://img.shields.io/npm/v/copee.svg)](https://www.npmjs.com/package/copee)
+[![npm](https://img.shields.io/npm/v/copee.svg?maxAge=2592000)](https://www.npmjs.com/package/copee)
 [![Downloads](https://img.shields.io/npm/dt/copee.svg)](https://www.npmjs.com/package/copee)
+[![Dependency Status](https://david-dm.org/styfle/copee.svg)](https://david-dm.org/styfle/copee)
+[![devDependency Status](https://david-dm.org/styfle/copee/dev-status.svg)](https://david-dm.org/styfle/copee#info=devDependencies)
+[![Build Status](https://travis-ci.org/styfle/copee.svg?branch=master)](https://travis-ci.org/styfle/copee)
+
+Copy text from browser to clipboard...natively!
 
 # Install
 
@@ -19,14 +22,18 @@ bower install copee
 
 # Demo
 
-Try the [demo](http://styfle.github.io/copee/) page to see it in action!
+Try the [demo page](http://styfle.github.io/copee/) to see it in action!
 
 # Usage
 
 ```js
+import { toClipboard } from 'copee.js';
+
 document.getElementById('btn').addEventListener('click', function (e) {
-    var success = Copee.toClipboard('Wow, "copee" works!');
-    showAlert(success);
+    const success = toClipboard('Wow, "copee" works!');
+    if (success) {
+        // it worked!
+    }
 });
 ```
 
