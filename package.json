@@ -4,7 +4,8 @@
   "description": "Copy text from browser to clipboard...natively!",
   "main": "src/copee.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "docs": "npm run build && cp src/copee.js docs/copee.js"
   },
   "repository": {
     "type": "git",
