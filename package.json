@@ -1,6 +1,6 @@
 {
   "name": "copee",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Copy text from browser to clipboard...natively!",
   "main": "dist/copee",
   "scripts": {
