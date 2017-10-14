@@ -11,7 +11,8 @@
     "umd": "rollup -i dist/copee.mjs -o dist/copee.umd.js -f umd -n copee",
     "iife": "rollup -i docs/script.js -o docs/iife.js -f iife -g copee:copee",
     "docs": "./replace.sh",
-    "test": "echo 'no tests at this time'"
+    "test": "echo 'no tests at this time'",
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
   "repository": {
     "type": "git",
