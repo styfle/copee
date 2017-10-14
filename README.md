@@ -16,15 +16,11 @@ Have you ever wanted to send a string to the user's clipboard? Front-end develop
 
 Introducting copee, a micro-wrapper around the browser's native "copy text" API.
 
-## Install
-
-```sh
-npm install --save copee
-```
-
 ## Demo
 
-See [the docs](http://styfle.github.io/copee/) to `copee` in action!
+Checkout the [demo page](http://styfle.github.io/copee/) to see `copee` in action!
+
+You can view the page source to quickly learn how to use it.
 
 ## Browser ESM Usage
 
@@ -44,7 +40,7 @@ See [the docs](http://styfle.github.io/copee/) to `copee` in action!
 ## Browser UMD Usage
 
 ```html
-<script nomodule src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
 <script type="text/javascript">
     document.getElementById('btn').addEventListener('click', () => {
         const success = copee.toClipboard('Wow, "copee" works via ES Modules!');
@@ -57,7 +53,13 @@ See [the docs](http://styfle.github.io/copee/) to `copee` in action!
 
 ## Node ESM Usage
 
-Create a file `index.mjs' with the following:
+Install `copee` with the following:
+
+```sh
+npm install --save copee
+```
+
+Create a file `index.mjs` with the following:
 
 ```js
 import { toClipboard } from 'copee';
@@ -72,7 +74,13 @@ node --experimental-modules index.mjs
 
 ## Node CJS Usage
 
-Create a file `index.js' with the following:
+Install `copee` with the following:
+
+```sh
+npm install --save copee
+```
+
+Create a file `index.js` with the following:
 
 ```js
 const { toClipboard } = require('copee');
@@ -93,6 +101,6 @@ ES6 Module (`.mjs`) supports Chrome 61+, Safari 10.1+, and soon to be more!
 
 This package was influenced by the following:
 
-- [Google Dev Blog](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) on Google 
+- [Google Dev Blog](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) 
 - [Mozilla Hacks](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/)
 - [StackOverflow](http://stackoverflow.com/a/30810322/266535)
