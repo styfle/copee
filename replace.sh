@@ -1,0 +1,1 @@
+cat docs/script.js | sed -e 's/copee/https:\/\/cdn.jsdelivr.net\/npm\/copee\/dist\/copee.mjs/' > docs/mod.mjs

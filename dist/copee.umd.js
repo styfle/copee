@@ -1,3 +1,9 @@
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.copee = {})));
+}(this, (function (exports) { 'use strict';
+
 /*! *****************************************************************************
 https://github.com/styfle/copee
 Copyright (c) styfle. All rights reserved.
@@ -8,7 +14,7 @@ License at http://www.apache.org/licenses/LICENSE-2.0
 /**
  * Copy text to the user's clipboard
  */
-export function toClipboard(text) {
+function toClipboard(text) {
     // Create element and select the text
     const ta = document.createElement('textarea');
     ta.value = text;
@@ -34,7 +40,7 @@ export function toClipboard(text) {
  * @param el The <input> or <textarea> element
  * @param preserveSelection True if text selection/highlight should be preserved after copying text
  */
-export function fromElement(el, preserveSelection) {
+function fromElement(el, preserveSelection) {
     let start = 0;
     let end = 0;
     let success = false;
@@ -54,3 +60,10 @@ export function fromElement(el, preserveSelection) {
     }
     return success;
 }
+
+exports.toClipboard = toClipboard;
+exports.fromElement = fromElement;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));

@@ -3,10 +3,14 @@
   "version": "0.1.3",
   "description": "Copy text from browser to clipboard...natively!",
   "main": "dist/copee",
-  "typings": "dist/copee.d.ts",
+  "types": "dist/copee.d.ts",
   "scripts": {
-    "build": "tsc --declaration && mv dist/copee.js dist/copee.mjs && tsc --module commonjs",
-    "docs": "npm run build && cp dist/*js docs/"
+    "build": "npm run mjs && npm run cjs && npm run umd && npm run iife && npm run docs",
+    "mjs": "tsc -d && mv dist/copee.js dist/copee.mjs",
+    "cjs": "tsc -m commonjs",
+    "umd": "rollup -i dist/copee.mjs -o dist/copee.umd.js -f umd -n copee",
+    "iife": "rollup -i docs/script.js -o docs/iife.js -f iife -g copee:copee",
+    "docs": "./replace.sh"
   },
   "repository": {
     "type": "git",
@@ -27,6 +31,7 @@
   },
   "homepage": "http://styfle.github.io/copee/",
   "devDependencies": {
+    "rollup": "^0.50.0",
     "typescript": "^2.5.3"
   }
 }

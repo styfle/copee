@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-6">
                     <p>Example 1: Copy hard-coded text</p>
-                    <p><button id="copee-btn1" class="btn btn-primary btn-lg" href="#" role="button">Copy To Clipboard</button></p>
+                    <p><button id="btn1" class="btn btn-primary btn-lg" href="#" role="button">Copy To Clipboard</button></p>
                 </div>
             </div>
             <div class="row">
@@ -38,9 +38,9 @@
                     <p>Example 2: Copy from <code>input</code> element</p>
 
                     <div class="input-group">
-                        <input id="copee-input2" type="text" class="form-control" placeholder="Copy Text" value="https://github.com/styfle/copee">
+                        <input id="input2" type="text" class="form-control" placeholder="Copy Text" value="https://github.com/styfle/copee">
                         <span class="input-group-btn">
-                            <button id="copee-btn2" class="btn btn-default" type="button">Copy!</button>
+                            <button id="btn2" class="btn btn-default" type="button">Copy!</button>
                         </span>
                     </div>
                 </div>
@@ -50,35 +50,8 @@
         <div class="alert alert-success" role="alert" style="display:none;">Check your clipboard :)</div>
         <div class="alert alert-danger" role="alert" style="display:none;">Something went wrong :(</div>
     </div>
-    <script type="module">
-        import { toClipboard, fromElement } from './copee.mjs';
-
-        function q(selector) {
-            return document.querySelector(selector);
-        }
-
-        function showAlert(success) {
-            if (success) {
-                q('.alert-success').style.display = 'block';
-            } else {
-                q('.alert-danger').style.display = 'block';
-            }
-            setTimeout(() => {
-                q('.alert-success').style.display = 'none';
-                q('.alert-danger').style.display = 'none';
-            }, 3000);
-        }
-
-        q('#copee-btn1').addEventListener('click', function (e) {
-            var success = toClipboard('Wow, "copee" works!');
-            showAlert(success);
-        });
-
-        q('#copee-btn2').addEventListener('click', function (e) {
-            var el = q('#copee-input2');
-            var success = fromElement(el);
-            showAlert(success);
-        });
-    </script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
+    <script nomodule src="./iife.js"></script>
+    <script type="module" src="./mod.mjs"></script>
 </body>
 </html>
