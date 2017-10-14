@@ -19,44 +19,80 @@ Introducting copee, a micro-wrapper around the browser's native "copy text" API.
 ## Install
 
 ```sh
-npm install copee
+npm install --save copee
 ```
 
 ## Demo
 
-Try the [demo page](http://styfle.github.io/copee/) to see it in action!
+See [the docs](http://styfle.github.io/copee/) to `copee` in action!
 
-## Browser Usage
+## Browser ESM Usage
 
-```js
-import { toClipboard } from './copee.mjs';
+```html
+<script type="module">
+    import { toClipboard } from 'https://cdn.jsdelivr.net/npm/copee/dist/copee.mjs';
 
-document.getElementById('btn').addEventListener('click', function (e) {
-    const success = toClipboard('Wow, "copee" works!');
-    if (success) {
-        // it worked!
-    }
-});
+    document.getElementById('btn').addEventListener('click', () => {
+        const success = toClipboard('Wow, "copee" works via ES Modules!');
+        if (success) {
+            // it worked, check your clipboard!
+        }
+    });
+</script>
 ```
 
-## Node.js Usage
+## Browser UMD Usage
+
+```html
+<script nomodule src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
+<script type="text/javascript">
+    document.getElementById('btn').addEventListener('click', () => {
+        const success = copee.toClipboard('Wow, "copee" works via ES Modules!');
+        if (success) {
+            // it worked, check your clipboard!
+        }
+    });
+</script>
+```
+
+## Node ESM Usage
+
+Create a file `index.mjs' with the following:
 
 ```js
-// node --experimental-modules index.mjs
 import { toClipboard } from 'copee';
+console.log('ESM: We found a ', typeof toClipboard);
+```
+
+Execute with the following:
+
+```sh
+node --experimental-modules index.mjs
+```
+
+## Node CJS Usage
+
+Create a file `index.js' with the following:
+
+```js
 const { toClipboard } = require('copee');
+console.log('CJS: We found a ', typeof toClipboard);
+```
+
+```sh
+node index.js
 ```
 
 ## Browser Suppport
 
 CommonJS Module (`.js`) supports IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
 
-ES6 Module (`.mjs`) supports Chrome 61+, Safari 10.1+
+ES6 Module (`.mjs`) supports Chrome 61+, Safari 10.1+, and soon to be more!
 
 ## Prior Art
 
-I was heavily influenced from [this post](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) on Google Developers Blog and [this answer](http://stackoverflow.com/a/30810322/266535) on Stack Overflow. The Mozilla team also wrote [this article](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/) with the release of Firefox 41.
+This package was influenced by the following:
 
-# Contributing
-
-Copee is written in [TypeScript](https://github.com/Microsoft/TypeScript) so pull requests should modify the `.ts` file.
+- [Google Dev Blog](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) on Google 
+- [Mozilla Hacks](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/)
+- [StackOverflow](http://stackoverflow.com/a/30810322/266535)
