@@ -11,11 +11,8 @@
     "type": "git",
     "url": "https://github.com/styfle/copee.git"
   },
-  "keywords": [
-    "copy",
-    "paste",
-    "clipboard"
-  ],
+  "files": [ "dist" ],
+  "keywords": [ "copy", "paste", "clipboard" ],
   "author": "styfle",
   "license": "MIT",
   "bugs": {

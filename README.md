@@ -1,6 +1,6 @@
 ﻿# copee
 
-[![npm](https://img.shields.io/npm/v/copee.svg?maxAge=2592000)](https://www.npmjs.com/package/copee)
+[![npm](https://img.shields.io/npm/v/copee.svg)](https://www.npmjs.com/package/copee)
 [![Downloads](https://img.shields.io/npm/dt/copee.svg)](https://www.npmjs.com/package/copee)
 [![Dependency Status](https://david-dm.org/styfle/copee.svg)](https://david-dm.org/styfle/copee)
 [![devDependency Status](https://david-dm.org/styfle/copee/dev-status.svg)](https://david-dm.org/styfle/copee#info=devDependencies)
@@ -18,7 +18,7 @@ Introducting copee, a micro-wrapper around the browser's native "copy text" API.
 
 ## Install
 
-```
+```sh
 npm install copee
 ```
 
@@ -26,11 +26,10 @@ npm install copee
 
 Try the [demo page](http://styfle.github.io/copee/) to see it in action!
 
-## Usage
+## Browser Usage
 
 ```js
 import { toClipboard } from './copee.mjs';
-// const { toClipboard } from 'copee';
 
 document.getElementById('btn').addEventListener('click', function (e) {
     const success = toClipboard('Wow, "copee" works!');
@@ -38,6 +37,14 @@ document.getElementById('btn').addEventListener('click', function (e) {
         // it worked!
     }
 });
+```
+
+## Node.js Usage
+
+```js
+// node --experimental-modules index.mjs
+import { toClipboard } from 'copee';
+const { toClipboard } = require('copee');
 ```
 
 ## Browser Suppport
