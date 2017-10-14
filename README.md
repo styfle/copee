@@ -43,7 +43,7 @@ You can view the page source to quickly learn how to use it.
 <script src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
 <script type="text/javascript">
     document.getElementById('btn').addEventListener('click', () => {
-        const success = copee.toClipboard('Wow, "copee" works via ES Modules!');
+        const success = copee.toClipboard('Wow, "copee" works!');
         if (success) {
             // it worked, check your clipboard!
         }
@@ -86,6 +86,8 @@ Create a file `index.js` with the following:
 const { toClipboard } = require('copee');
 console.log('CJS: We found a ', typeof toClipboard);
 ```
+
+Execute with the following:
 
 ```sh
 node index.js
