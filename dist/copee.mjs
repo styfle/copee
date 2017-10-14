@@ -31,18 +31,18 @@ export function toClipboard(text) {
 }
 /**
  * Copy text from an input/textarea element to a user's clipboard
- * @param el
- * @param preserveSelection
+ * @param el The <input> or <textarea> element
+ * @param preserveSelection True if text selection/highlight should be preserved after copying text
  */
 export function fromElement(el, preserveSelection) {
     let start = 0;
     let end = 0;
+    let success = false;
     if (preserveSelection) {
         start = el.selectionStart;
         end = el.selectionEnd;
     }
     el.select();
-    var success = false;
     try {
         success = document.execCommand('copy');
     }
@@ -54,4 +54,3 @@ export function fromElement(el, preserveSelection) {
     }
     return success;
 }
-//# sourceMappingURL=copee.js.map

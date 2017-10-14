@@ -3,8 +3,9 @@
         "module": "es2015",
         "target": "ES2017",
         "strict": true,
-        "rootDir": ".",
-        "sourceMap": true
+        "rootDir": "src",
+        "outDir": "dist",
+        "sourceMap": false
     },
     "exclude": [
         "node_modules"
