@@ -8,26 +8,21 @@
 
 Copy text from browser to clipboard...natively!
 
-# Install
+## Install
 
 ```
 npm install copee
 ```
 
-OR
-
-```
-bower install copee
-```
-
-# Demo
+## Demo
 
 Try the [demo page](http://styfle.github.io/copee/) to see it in action!
 
-# Usage
+## Usage
 
 ```js
-import { toClipboard } from 'copee.js';
+import { toClipboard } from './copee.mjs';
+// const { toClipboard } from 'copee';
 
 document.getElementById('btn').addEventListener('click', function (e) {
     const success = toClipboard('Wow, "copee" works!');
@@ -37,11 +32,13 @@ document.getElementById('btn').addEventListener('click', function (e) {
 });
 ```
 
-# Browser Suppport
+## Browser Suppport
 
-IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
+CommonJS Module (`.js`) supports IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
 
-# Influence
+ES6 Module (`.mjs`) supports Chrome 61+, Safari 10.1+
+
+## Prior Art
 
 I was heavily influenced from [this post](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) on Google Developers Blog and [this answer](http://stackoverflow.com/a/30810322/266535) on Stack Overflow. The Mozilla team also wrote [this article](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/) with the release of Firefox 41.
 
