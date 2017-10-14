@@ -3,8 +3,9 @@
   "version": "0.1.2",
   "description": "Copy text from browser to clipboard...natively!",
   "main": "dist/copee",
+  "typings": "dist/copee.d.ts",
   "scripts": {
-    "build": "tsc && mv dist/copee.js dist/copee.mjs && tsc --module commonjs",
+    "build": "tsc --declaration && mv dist/copee.js dist/copee.mjs && tsc --module commonjs",
     "docs": "npm run build && cp dist/*js docs/"
   },
   "repository": {
