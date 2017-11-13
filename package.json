@@ -34,6 +34,6 @@
   "homepage": "http://styfle.github.io/copee/",
   "devDependencies": {
     "rollup": "^0.50.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.6.1"
   }
 }
