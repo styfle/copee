@@ -14,9 +14,11 @@ Introducting copee, a micro-wrapper around the browser's native "copy text" API.
 
 ## Demo
 
-Checkout the [demo page](http://styfle.github.io/copee/) to see `copee` in action!
+[Try the demo](http://styfle.github.io/copee/) to see `copee` in action!
 
 You can view the page source to quickly learn how to use it.
+
+Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-16-es6-modules-today-with-typescript.md) for some background.
 
 ## Browser ESM Usage
 
@@ -102,3 +104,7 @@ This package was influenced by the following:
 - [Google Dev Blog](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) 
 - [Mozilla Hacks](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/)
 - [StackOverflow](http://stackoverflow.com/a/30810322/266535)
+
+## Authors
+
+Developed by [ceriously.com](https://www.ceriously.com)
