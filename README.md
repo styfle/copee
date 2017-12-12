@@ -1,16 +1,17 @@
 ﻿# copee
 
 [![npm](https://img.shields.io/npm/v/copee.svg)](https://www.npmjs.com/package/copee)
+[![size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js?compression=gzip)](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js)
 [![Downloads](https://img.shields.io/npm/dt/copee.svg)](https://www.npmjs.com/package/copee)
 [![Dependency Status](https://david-dm.org/styfle/copee.svg)](https://david-dm.org/styfle/copee)
 [![devDependency Status](https://david-dm.org/styfle/copee/dev-status.svg)](https://david-dm.org/styfle/copee#info=devDependencies)
 [![Build Status](https://travis-ci.org/styfle/copee.svg?branch=master)](https://travis-ci.org/styfle/copee)
 
-Copy text from browser to clipboard...natively!
+Copy text from browser to clipboard...natively! Less than 1 kB!
 
 Have you ever wanted to send a string to the user's clipboard? Front-end developers have invented many hacks to get around this limitation...until now!
 
-Introducting copee, a micro-wrapper around the browser's native "copy text" API.
+Introducting `copee`, a micro-wrapper around the browser's native "copy text" API. Death to Adobe Flash! :skull:
 
 ## Demo
 
