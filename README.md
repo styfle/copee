@@ -96,7 +96,7 @@ node index.js
 
 CommonJS Module (`.js`) supports IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
 
-ES6 Module (`.mjs`) supports Chrome 61+, Safari 10.1+, and soon to be more!
+ES6 Module ([.mjs](https://caniuse.com/#feat=es6-module)) supports Chrome 61+, Safari 10.1+, Edge 16+ and soon to be more!
 
 ## Prior Art
 
