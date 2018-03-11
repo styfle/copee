@@ -15,7 +15,7 @@ Introducting `copee`, a micro-wrapper around the browser's native "copy text" AP
 
 ## Demo
 
-[Try the demo](http://styfle.github.io/copee/) to see `copee` in action!
+[Try the demo](http://copee.ceriously.com/) to see `copee` in action!
 
 You can view the page source to quickly learn how to use it.
 
