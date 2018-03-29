@@ -15,7 +15,7 @@ Introducting `copee`, a micro-wrapper around the browser's native "copy text" AP
 
 ## Demo
 
-[Try the demo](http://copee.ceriously.com/) to see `copee` in action!
+[Try the demo](https://copee.ceriously.com/) to see `copee` in action!
 
 You can view the page source to quickly learn how to use it.
 
@@ -104,7 +104,7 @@ This package was influenced by the following:
 
 - [Google Dev Blog](https://developers.google.com/web/updates/2015/04/cut-and-copy-commands) 
 - [Mozilla Hacks](https://hacks.mozilla.org/2015/09/flash-free-clipboard-for-the-web/)
-- [StackOverflow](http://stackoverflow.com/a/30810322/266535)
+- [StackOverflow](https://stackoverflow.com/a/30810322/266535)
 
 ## Authors
 
