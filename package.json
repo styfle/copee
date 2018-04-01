@@ -33,7 +33,7 @@
   },
   "homepage": "http://copee.ceriously.com/",
   "devDependencies": {
-    "rollup": "^0.56.3",
+    "rollup": "^0.57.1",
     "typescript": "^2.7.1"
   }
 }
