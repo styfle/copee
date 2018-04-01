@@ -50,7 +50,7 @@ export function fromElement(el: HTMLInputElement | HTMLTextAreaElement, preserve
     }
 
     if (preserveSelection) {
-        (el as any).setSelectionRange(start, end);
+        el.setSelectionRange(start, end);
     }
 
     return success;
