@@ -2,6 +2,7 @@
   "name": "copee",
   "version": "1.0.4",
   "description": "Copy text from browser to clipboard...natively! < 1kB",
+  "homepage": "https://copee.ceriously.com/",
   "main": "dist/copee",
   "types": "dist/copee.d.ts",
   "scripts": {
@@ -31,7 +32,6 @@
   "bugs": {
     "url": "https://github.com/styfle/copee/issues"
   },
-  "homepage": "http://copee.ceriously.com/",
   "devDependencies": {
     "rollup": "^0.57.1",
     "typescript": "^2.7.1"
