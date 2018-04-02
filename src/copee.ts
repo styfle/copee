@@ -37,8 +37,8 @@ export function fromElement(el: HTMLInputElement | HTMLTextAreaElement, preserve
     let success = false;
 
     if (preserveSelection) {
-        start = el.selectionStart;
-        end = el.selectionEnd;
+        start = el.selectionStart || 0;
+        end = el.selectionEnd || 0;
     }
 
     el.select();
