@@ -1,4 +1,4 @@
-﻿# copee
+# copee
 
 [![npm](https://img.shields.io/npm/v/copee.svg)](https://www.npmjs.com/package/copee)
 [![size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js?compression=gzip)](https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js)
