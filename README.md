@@ -11,7 +11,9 @@ Copy text from browser to clipboard...natively! Less than 1 kB!
 
 Have you ever wanted to send a string to the user's clipboard? Front-end developers have invented many hacks to get around this limitation...until now!
 
-Introducting `copee`, a micro-wrapper around the browser's native "copy text" API. Death to Adobe Flash! :skull:
+Introducing `copee`, a micro-wrapper around the browser's native "copy text" API 🗜️
+
+Death to Adobe Flash 💀
 
 ## Demo
 
