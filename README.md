@@ -52,48 +52,6 @@ Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-1
 </script>
 ```
 
-## Node ESM Usage
-
-Install `copee` with the following:
-
-```sh
-npm install --save copee
-```
-
-Create a file `index.mjs` with the following:
-
-```js
-import { toClipboard } from 'copee';
-console.log('ESM: We found a ', typeof toClipboard);
-```
-
-Execute with the following:
-
-```sh
-node --experimental-modules index.mjs
-```
-
-## Node CJS Usage
-
-Install `copee` with the following:
-
-```sh
-npm install --save copee
-```
-
-Create a file `index.js` with the following:
-
-```js
-const { toClipboard } = require('copee');
-console.log('CJS: We found a ', typeof toClipboard);
-```
-
-Execute with the following:
-
-```sh
-node index.js
-```
-
 ## Browser Suppport
 
 CommonJS Module (`.js`) supports IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
