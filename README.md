@@ -5,7 +5,7 @@
 [![install size](https://packagephobia.now.sh/badge?p=copee)](https://packagephobia.now.sh/result?p=copee)
 [![Downloads](https://img.shields.io/npm/dt/copee.svg)](https://www.npmjs.com/package/copee)
 [![Dependency Status](https://david-dm.org/styfle/copee.svg)](https://david-dm.org/styfle/copee)
-[![devDependency Status](https://david-dm.org/styfle/copee/dev-status.svg)](https://david-dm.org/styfle/copee#info=devDependencies)
+[![devDependency Status](https://david-dm.org/styfle/copee/dev-status.svg)](https://david-dm.org/styfle/copee?type=dev)
 [![Build Status](https://travis-ci.org/styfle/copee.svg?branch=master)](https://travis-ci.org/styfle/copee)
 
 Copy text from browser to clipboard...natively! Less than 1 kB!
