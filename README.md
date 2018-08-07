@@ -44,8 +44,8 @@ Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-1
 ```html
 <script src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
 <script type="text/javascript">
-    document.getElementById('btn').addEventListener('click', () => {
-        const success = copee.toClipboard('Wow, "copee" works!');
+    document.getElementById('btn').addEventListener('click', function () {
+        var success = copee.toClipboard('Wow, "copee" works!');
         if (success) {
             // it worked, check your clipboard!
         }
