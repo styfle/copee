@@ -6,7 +6,7 @@
     function showAlert(success) {
         const el = success ? q('.alert-success') : q('.alert-danger');
         el.style.display = 'block';
-        setTimeout(() => el.style.display = 'none', 3000);
+        setTimeout(function () { el.style.display = 'none' }, 3000);
     };
 
     q('#btn1').addEventListener('click', function () {
