@@ -55,9 +55,8 @@ Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-1
 
 ## Browser Suppport
 
-CommonJS Module (`.js`) supports IE 10+, Chrome 43+, Opera 29+, and Firefox 41+
-
-ES6 Module ([.mjs](https://caniuse.com/#feat=es6-module)) supports Chrome 61+, Safari 10.1+, Edge 16+, and Firefox 60+
+- UMD (`.js`) supports IE 11+, Chrome 43+, Opera 29+, and Firefox 41+
+- ESM ([.mjs](https://caniuse.com/#feat=es6-module)) supports Chrome 61+, Safari 10.1+, Edge 16+, and Firefox 60+
 
 ## Prior Art
 
