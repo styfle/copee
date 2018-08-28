@@ -1,7 +1,7 @@
 # copee
 
 [![npm](https://badgen.net/npm/v/copee)](https://www.npmjs.com/package/copee)
-[![size](http://img.badgesize.io/https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js?compression=gzip)](https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js)
+[![size](https://badgen.net/badgesize/gzip/https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js)](https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js)
 [![install size](https://badgen.net/packagephobia/install/copee)](https://packagephobia.now.sh/result?p=copee)
 [![Downloads](https://badgen.net/npm/dt/copee)](https://www.npmjs.com/package/copee)
 [![Dependency Status](https://badgen.net/david/dep/styfle/copee)](https://david-dm.org/styfle/copee)
