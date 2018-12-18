@@ -5,6 +5,8 @@
   "homepage": "https://copee.ceriously.com/",
   "main": "dist/copee",
   "types": "dist/copee.d.ts",
+  "browser": "dist/copee.mjs",
+  "module": "dist/copee.mjs",
   "scripts": {
     "build": "npm run mjs && npm run cjs && npm run umd && npm run iife && npm run docs",
     "mjs": "tsc -d && mv dist/copee.js dist/copee.mjs",
