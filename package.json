@@ -1,6 +1,6 @@
 {
   "name": "copee",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Copy text from browser to clipboard...natively! < 1kB",
   "homepage": "https://copee.ceriously.com/",
   "main": "dist/copee",
