@@ -35,7 +35,7 @@
     "url": "https://github.com/styfle/copee/issues"
   },
   "devDependencies": {
-    "rollup": "^0.68.1",
+    "rollup": "^1.0.0",
     "typescript": "^3.2.2"
   }
 }
