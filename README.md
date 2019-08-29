@@ -28,14 +28,14 @@ Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-1
 
 ```html
 <script type="module">
-    import { toClipboard } from 'https://cdn.jsdelivr.net/npm/copee/dist/copee.mjs';
+  import { toClipboard } from 'https://cdn.jsdelivr.net/npm/copee/dist/copee.mjs';
 
-    document.getElementById('btn').addEventListener('click', () => {
-        const success = toClipboard('Wow, "copee" works via ES Modules!');
-        if (success) {
-            // it worked, check your clipboard!
-        }
-    });
+  document.getElementById('btn').addEventListener('click', () => {
+    const success = toClipboard('Wow, "copee" works via ES Modules!');
+    if (success) {
+      // it worked, check your clipboard!
+    }
+  });
 </script>
 ```
 
@@ -44,12 +44,12 @@ Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-1
 ```html
 <script src="https://cdn.jsdelivr.net/npm/copee/dist/copee.umd.js"></script>
 <script type="text/javascript">
-    document.getElementById('btn').addEventListener('click', function () {
-        var success = copee.toClipboard('Wow, "copee" works!');
-        if (success) {
-            // it worked, check your clipboard!
-        }
-    });
+  document.getElementById('btn').addEventListener('click', function () {
+    var success = copee.toClipboard('Wow, "copee" works!');
+    if (success) {
+      // it worked, check your clipboard!
+    }
+  });
 </script>
 ```
 
