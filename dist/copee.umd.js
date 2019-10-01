@@ -54,8 +54,8 @@
         return success;
     }
 
-    exports.toClipboard = toClipboard;
     exports.fromElement = fromElement;
+    exports.toClipboard = toClipboard;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
