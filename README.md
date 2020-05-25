@@ -22,7 +22,7 @@ Death to Adobe Flash 💀
 
 You can view the page source to quickly learn how to use it.
 
-Also, read [this blog post](https://www.ceriously.com/blog/post.php?id=2017-10-16-es6-modules-today-with-typescript.md) for some background.
+Also, read [this blog post](https://styfle.dev/blog/es6-modules-today-with-typescript) for some background.
 
 ## Browser ESM Usage
 
