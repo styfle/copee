@@ -68,4 +68,4 @@ This package was influenced by the following:
 
 ## Authors
 
-Developed by [ceriously.com](https://www.ceriously.com)
+Developed by [styfle](https://styfle.dev)
